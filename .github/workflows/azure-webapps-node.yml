@@ -43,6 +43,7 @@ jobs:
       run: |
         yarn install
         yarn run build --if-present
+        yarn run test --if-present
 
     - name: Upload artifact for deployment job
       uses: actions/upload-artifact@v3
